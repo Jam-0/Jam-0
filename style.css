@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+html {
+  font-size: 150%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+  background-color: rgb(60, 155, 6);
+  color: honeydew;
+  font-family: "Press Start 2P", sans-serif;
+}
+button {
+  background-color: #ffffff;
+  color: black;
+}
+
+.flash {
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
