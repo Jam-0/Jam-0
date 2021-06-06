@@ -1,12 +1,11 @@
+let seasonScores = [];
+let careerScores = [];
+
 function singleScore() {
   let startGame = Math.floor(Math.random() * 30);
-
   let midGame = Math.floor(Math.random() * 50);
-
   let endGame = Math.floor(Math.random() * 60);
-
   let recordGame = Math.floor(Math.random() * 100);
-
   let score = 0;
 
   //match logic
@@ -31,10 +30,7 @@ function singleScore() {
 }
 
 function printSeason() {
-  let seasonScores = [];
-
   let seasonAve = 0;
-
   let seasonRuns = 0;
 
   for (var match = 0; match < 21; match++) {
@@ -49,8 +45,6 @@ function printSeason() {
 }
 
 function runCareer(age) {
-  let careerScores = [];
-
   let careerAve = 0;
 
   let careerRuns = 0;
@@ -95,7 +89,19 @@ function runCareer(age) {
   } centuries`;
 }
 
+function displayCareer() {
+  careerScores.forEach(thisFunction);
+  function thisFunction(item, index) {
+    document.getElementById("career").innerHTML += " Score: " + item + "<BR>";
+  }
+
+  careerScores.toString();
+  document.querySelector(".career").textContent = careerScores;
+  console.log(careerScores);
+}
+
 document.querySelector(".careerB").addEventListener("click", function () {
   document.querySelector(".careerS").textContent = runCareer(18);
   document.querySelector(".flash").textContent = "";
+  displayCareer();
 });

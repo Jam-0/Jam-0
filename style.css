@@ -5,6 +5,10 @@ html {
   box-sizing: border-box;
 }
 
+#career {
+  background-color: black;
+}
+
 body {
   margin: 100px;
   background-color: rgb(60, 155, 6);
@@ -14,6 +18,11 @@ body {
 button {
   background-color: #ffffff;
   color: black;
+}
+
+#careerBOX {
+  color: rgb(185, 131, 64);
+  word-wrap: break-word;
 }
 
 .flash {
